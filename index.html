@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>C M Y K</title>
+        <!-- enllaç font servidor -->
+        <link href = "https://fonts.googleapis.com/css?family= Roboto & display = swap" rel = "stylesheet">
+
+        <style type="text/css">
+            /*reset*/
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            /*fontsafes*/
+            
+            /*fontslocal*/
+            /* PASOS PARA APLICAR LA TIPOGRAFÍA LOCAL
+            1. Comprovar que els arxius estiguen en la carpeta del llocweb.
+            2. @fontface enllacem els arxius font: .eot, .ttf, .svg, .woff (nombrar la tipo)
+            3. Construir la propietat: font-family 'nom de la tipo'; que hem creat.
+            */
+            @font-face{font-family:'oswald';
+            src:url('fonts/oswald/Oswald-Bold-Cut.svg'),
+                url('fonts/oswald/Oswald-Bold-Cut.eot'),
+                url('fonts/oswald/Oswald-Bold-Cut.ttf'),
+                url('fonts/oswald/Oswald-Bold-Cut.woff');
+            }
+            /*OTRA FORMA DE PONER LA IMAGEN, VINCULAMOS CSS CON LA ETIQUETA BODY DENTRO DE HEAD*/
+            body{
+                background-image: url(../img/c.jpg),url(../img/m.jpg), url(../img/y.jpg), url(../img/k.jpg);
+                background-size: 50% auto, 50% auto, 50% auto, 50% auto;
+                background-repeat: no-repeat,no-repeat, no-repeat, no-repeat;
+                background-position: 0 top 0 left, 0 top 0 right, 0 bottom 0 left, 0 right 0 bottom;
+            }
+            h1,h2,h3,h4{
+                float: left;
+                width: 50%;
+                height: 30vh;
+                text-align: center;
+                padding: 20vh 0 0 0;
+                font-size: 100px;
+            }
+            h1{
+                color: blue;
+                font-family: 'Roboto', sans-serif;
+                background-color: cyan;
+                background-image: url(../img/c.jpg);
+                background-size: 100% auto;
+            }
+            h2{
+                color: blueviolet;
+                font-family: "oswald";
+                background-color: magenta;
+                background-image: url(../img/m.jpg);
+                background-size: 100% auto;
+            }
+            h3{
+                color: orange;
+                font-family: "Courier New", courier, monospace;
+                background-color: yellow;
+                background-image: url(../img/y.jpg);
+                background-size: 100% auto;
+            }
+            h4{
+                color: black;
+                background-color: black;
+                background-image: url(../img/k.jpg);
+                background-size: 100% auto;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="pages/c.html"><h1>C</h1></a>
+        <a href="pages/m.html"><h2>M</h2></a>
+        <a href="pages/y.html"><h3>Y</h3></a>
+        <a href="pages/k.html"><h4>K</h4></a>
+    </body>
+</html>
